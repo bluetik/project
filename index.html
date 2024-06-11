@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Digital Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm VARAD POTADAR, a STUDENT with a passion for DATA SCIENCE.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>BTech in Electronics, Started in 2022 - MIT ACADEMY OF ENGINEERING</li>
+            <li>BS in DATA SCIENCE AND APPLICATIONS, Started in 2022 - IIT MADRAS</li>
+        </ul>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li><img src="D:\MIT\FY\html\Screenshot 2024-06-11 174614.png" alt="Achievement 1"></li>
+            <li><img src="D:\MIT\FY\html\Screenshot 2024-06-11 174711.png" alt="Achievement 2"></li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>SMART-PARKING SYSTEM</strong></li>
+            <li> The Smart Parking System is an innovative IoT solution designed to 
+                revolutionize the way we manage and navigate parking spaces. This 
+                cutting-edge system combines advanced sensors, intuitive software, and 
+                intelligent automation to provide a seamless and efficient parking 
+                experience for both drivers and parking lot operators.
+            </li>
+            <li><strong>NOISE ALERT SYSTEM FOR SENSITIVE AREAS</strong></li>
+            <li>The pressing issue of noise pollution, evident in our urban surroundings, fueled our motivation to address this problem. Witnessing its adverse effects on health and well-being, particularly in noisy environments, inspired us to seek a practical solution. Leveraging advancements in IoT technology, we aimed to develop a real-time noise monitoring system to provide timely interventions and contribute to environmental sustainability. This project also presented an opportunity for hands-on learning and skill development in electronics, programming, and data analytics.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email: <a href="mailto:varad.potadar@mitaoe.ac.in">varad.potadar@mitaoe.ac.in</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/varad-potadar-9a56aa2b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/varad-potadar</a></li>
+        </ul>
+    </section>
+    <a href="#" class="back-to-top">Back to Top</a>
+    <script>
+        // Show the "Back to Top" button when the user scrolls down
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll back to top
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
